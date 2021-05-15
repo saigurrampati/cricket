@@ -1,0 +1,12 @@
+<h1> players </h1>
+
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit">
+    <br>
+
+    <a href="/ipl/" ><button>BACK</button></a><br>
+
+</form>
