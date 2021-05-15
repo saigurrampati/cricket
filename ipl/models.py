@@ -27,6 +27,8 @@ class Player(models.Model):
     hundreds = models.IntegerField(max_length=100)
     wickets = models.DecimalField(max_digits=5, decimal_places=0)
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='')
+
 
     def __str__(self):
         return self.jersey_id
